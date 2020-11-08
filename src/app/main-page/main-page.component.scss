@@ -1,0 +1,67 @@
+@import '../../main-styles.scss';
+
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar {
+    width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo:hover {
+  opacity: 0.8;
+}
+
+.total-budget-section {
+    display: flex;
+    height: 150px;
+    background-color: $dark;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: aliceblue;
+        font-size: 35px;
+        &.green {
+            color: lighten($green, $amount: 15%);
+        }
+        &.red {
+            color: lighten($red, $amount: 15%);
+        }
+    }
+}
+
+.add-item-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    add-item-container {
+        
+    }
+}
